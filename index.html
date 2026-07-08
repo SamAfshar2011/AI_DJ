@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI DJ · Autonomous Mix Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- ===== animated ambient background ===== -->
+  <div class="bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grain"></div>
+  </div>
+
+  <main class="stage">
+    <!-- ===== header ===== -->
+    <header class="topbar glass">
+      <div class="brand">
+        <div class="logo">
+          <span class="disc"><span class="disc-hole"></span></span>
+        </div>
+        <div class="brand-text">
+          <h1>AI&nbsp;DJ</h1>
+          <p>Autonomous mix studio · analyse · beatmatch · master</p>
+        </div>
+      </div>
+      <div class="status-pill" id="statusPill">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText">Ready</span>
+      </div>
+    </header>
+
+    <!-- ===== step 1 · source ===== -->
+    <section class="card glass" id="sourceCard">
+      <div class="card-head">
+        <span class="step-index">01</span>
+        <div>
+          <h2>Select your music</h2>
+          <p class="muted">Point the AI at a local folder. It scans recursively for audio.</p>
+        </div>
+      </div>
+
+      <div class="drop" id="dropZone">
+        <div class="drop-inner">
+          <div class="drop-icon">⟐</div>
+          <p class="drop-title">Choose a folder of tracks</p>
+          <p class="muted small">mp3 · wav · flac · m4a · aac · ogg</p>
+          <div class="drop-actions">
+            <button class="btn primary" id="browseBtn">
+              <span class="btn-glow"></span>Browse folder…
+            </button>
+            <label class="btn ghost" for="folderUpload" id="uploadBtn">Upload folder</label>
+            <input type="file" id="folderUpload" webkitdirectory directory multiple hidden />
+          </div>
+          <div class="path-row">
+            <input type="text" id="folderPath" class="path-input"
+                   placeholder="…or paste an absolute folder path" spellcheck="false" />
+            <button class="btn subtle" id="scanBtn">Scan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="scan-summary" id="scanSummary" hidden>
+        <span class="badge" id="scanCount">0 tracks</span>
+        <span class="muted small" id="scanNote"></span>
+      </div>
+    </section>
+
+    <!-- ===== step 2 · settings ===== -->
+    <section class="card glass" id="settingsCard">
+      <div class="card-head clickable" id="settingsToggle">
+        <span class="step-index">02</span>
+        <div>
+          <h2>Mix direction <span class="chev" id="settingsChev">▾</span></h2>
+          <p class="muted">Optional — sensible defaults are already dialled in.</p>
+        </div>
+      </div>
+
+      <div class="settings-grid" id="settingsBody">
+        <div class="ctrl">
+          <label>Energy journey</label>
+          <div class="segmented" id="energyCurve" data-value="rising">
+            <button data-v="rising" class="on">Rising</button>
+            <button data-v="wave">Wave</button>
+            <button data-v="peak">Peak</button>
+            <button data-v="flat">Steady</button>
+            <button data-v="descending">Wind&nbsp;down</button>
+          </div>
+        </div>
+
+        <div class="ctrl">
+          <label>Transition length / blend <output id="transOut">55%</output></label>
+          <input type="range" id="transIntensity" min="0" max="100" value="55" />
+        </div>
+
+        <div class="ctrl">
+          <label>Effect intensity <output id="fxOut">45%</output></label>
+          <input type="range" id="fxIntensity" min="0" max="100" value="45" />
+        </div>
+
+        <div class="ctrl">
+          <label>Harmonic priority <output id="harmOut">60%</output></label>
+          <input type="range" id="harmPriority" min="0" max="100" value="60" />
+        </div>
+
+        <div class="ctrl">
+          <label>Target mix length <output id="lenOut">Auto</output></label>
+          <input type="range" id="mixLength" min="0" max="120" value="0" />
+          <span class="muted small">0 = use every track</span>
+        </div>
+
+        <div class="ctrl toggles">
+          <label class="switch">
+            <input type="checkbox" id="preserveQuality" checked />
+            <span class="track"></span><span class="switch-label">Preserve quality</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="aggressive" />
+            <span class="track"></span><span class="switch-label">Aggressive remix</span>
+          </label>
+        </div>
+
+        <div class="ctrl">
+          <label>Output format</label>
+          <div class="segmented" id="outFormat" data-value="both">
+            <button data-v="both" class="on">WAV + MP3</button>
+            <button data-v="wav">WAV</button>
+            <button data-v="mp3">MP3</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== generate ===== -->
+    <div class="cta-row">
+      <button class="btn generate" id="generateBtn" disabled>
+        <span class="btn-glow"></span>
+        <span class="gen-label">Generate the mix</span>
+      </button>
+    </div>
+
+    <!-- ===== progress ===== -->
+    <section class="card glass" id="progressCard" hidden>
+      <div class="card-head">
+        <span class="step-index live">◉</span>
+        <div>
+          <h2 id="progressStageTitle">Working…</h2>
+          <p class="muted" id="progressMessage">Starting the engine.</p>
+        </div>
+      </div>
+
+      <div class="stages" id="stageStepper">
+        <span class="stage-chip" data-s="scanning">Scan</span>
+        <span class="stage-chip" data-s="metadata">Metadata</span>
+        <span class="stage-chip" data-s="analysis">Analyse</span>
+        <span class="stage-chip" data-s="planning">Plan</span>
+        <span class="stage-chip" data-s="transitions">Transitions</span>
+        <span class="stage-chip" data-s="rendering">Render</span>
+        <span class="stage-chip" data-s="finalizing">Finalise</span>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"><span class="liquid"></span></div>
+        </div>
+        <div class="progress-pct" id="progressPct">0%</div>
+      </div>
+
+      <div class="timers">
+        <div class="timer">
+          <span class="timer-num" id="elapsedTimer">0:00</span>
+          <span class="timer-lbl">elapsed</span>
+        </div>
+        <div class="timer">
+          <span class="timer-num" id="etaTimer">—</span>
+          <span class="timer-lbl">remaining</span>
+        </div>
+      </div>
+
+      <div class="warnings" id="warnings"></div>
+    </section>
+
+    <!-- ===== detected tracks ===== -->
+    <section class="card glass" id="tracksCard" hidden>
+      <div class="card-head">
+        <span class="step-index">♪</span>
+        <div>
+          <h2>Detected tracks <span class="count-pill" id="trackCountPill">0</span></h2>
+          <p class="muted">BPM, key, energy and vibe extracted per track.</p>
+        </div>
+      </div>
+      <div class="track-list" id="trackList"></div>
+    </section>
+
+    <!-- ===== journey / plan ===== -->
+    <section class="card glass" id="planCard" hidden>
+      <div class="card-head">
+        <span class="step-index">➜</span>
+        <div>
+          <h2>The AI's set</h2>
+          <p class="muted" id="planSummary"></p>
+        </div>
+      </div>
+      <ol class="journey" id="journey"></ol>
+    </section>
+
+    <!-- ===== result player ===== -->
+    <section class="card glass result" id="resultCard" hidden>
+      <div class="card-head">
+        <span class="step-index done">✓</span>
+        <div>
+          <h2>Your mix is ready</h2>
+          <p class="muted" id="resultMeta"></p>
+        </div>
+      </div>
+
+      <div class="player">
+        <canvas id="viz" class="viz"></canvas>
+        <div class="player-controls">
+          <button class="play-btn" id="playBtn" aria-label="Play/Pause">
+            <svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="seek">
+            <div class="seek-track" id="seekTrack"><div class="seek-fill" id="seekFill"></div></div>
+            <div class="seek-time"><span id="curTime">0:00</span><span id="durTime">0:00</span></div>
+          </div>
+          <div class="vol">
+            <span class="vol-ico">♪</span>
+            <input type="range" id="volume" min="0" max="100" value="90" />
+          </div>
+        </div>
+        <audio id="audio" preload="metadata" crossorigin="anonymous"></audio>
+      </div>
+
+      <div class="downloads">
+        <a class="btn primary" id="dlWav" download>Download WAV</a>
+        <a class="btn ghost" id="dlMp3" download>Download MP3</a>
+        <div class="check-badges" id="checkBadges"></div>
+      </div>
+    </section>
+
+    <footer class="foot muted small">
+      Local · private · nothing leaves your machine. Built with librosa · Rubber&nbsp;Band · PyTorch · FastAPI.
+    </footer>
+  </main>
+
+  <!-- ===== error toast ===== -->
+  <div class="toast" id="toast" hidden><span id="toastMsg"></span></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

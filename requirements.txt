@@ -1,0 +1,40 @@
+# ===== AI DJ — Python dependencies =====
+# Tested on Python 3.12 (macOS / Apple Silicon).  A system ffmpeg install is
+# also required (brew install ffmpeg / apt-get install ffmpeg) and, for the best
+# time-stretch quality, the Rubber Band CLI (brew install rubberband).
+
+# --- core DSP / audio ---
+numpy>=1.26
+scipy>=1.11
+librosa>=0.10
+soundfile>=0.12
+soxr>=0.4                # high-quality (VHQ) resampling
+pyloudnorm>=0.1          # integrated LUFS metering
+pydub>=0.25
+audioread>=3.0
+ffmpeg-python>=0.2
+
+# --- time / pitch stretching (pitch-preserving beatmatch) ---
+pyrubberband>=0.3        # needs the `rubberband` CLI on PATH
+
+# --- metadata ---
+mutagen>=1.47
+
+# --- ML (vibe embedding model + optional trained models) ---
+torch>=2.1
+scikit-learn>=1.3
+
+# --- backend / web ---
+fastapi>=0.110
+uvicorn>=0.27
+websockets>=12.0
+python-multipart>=0.0.9  # multipart uploads (webkitdirectory fallback)
+aiofiles>=23.0
+pydantic>=2.0
+
+# --- notebooks (optional, for training) ---
+ipykernel>=6.29
+jupyter_client>=8.0
+tqdm>=4.66
+pandas>=2.0              # model_2 (MagnaTagATune annotations)
+matplotlib>=3.7          # optional plots in training notebooks
