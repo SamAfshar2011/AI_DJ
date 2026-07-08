@@ -233,3 +233,17 @@ Logs: `logs/aidj.log`. Per-mix analysis/plan report: `outputs/<mix>_report.json`
 
 Built to be honest about all of the above — the UI shows the technique and
 reasoning for every transition so you can hear *and see* what it decided.
+
+## 📜 License
+
+This project is proprietary software.
+
+**Copyright © 2026 Sam. All Rights Reserved.**
+
+This repository is made available solely for portfolio, demonstration, evaluation, and competition purposes.
+
+No permission is granted to use, execute, copy, modify, reverse engineer, distribute, sublicense, host, commercialize, or create derivative works from this software without the prior written permission of the copyright holder.
+
+The source code, algorithms, software architecture, user interface, documentation, models, prompts, assets, and all original project materials are protected by copyright and other applicable intellectual property laws.
+
+See the `LICENSE` file for the complete license terms.
