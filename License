@@ -1,0 +1,51 @@
+AI DJ Proprietary Software License
+
+Copyright © 2026 Sam. All Rights Reserved.
+
+1. Ownership
+
+AI DJ, including its source code, DSP algorithms, planning engine, transition engine, audio processing pipeline, machine learning models, neural network architectures, embeddings, datasets (where owned by the author), documentation, interface, assets, generated mixes, reports, and related materials are the exclusive intellectual property of the copyright holder.
+
+2. No License Granted
+
+No rights are granted to use, execute, copy, modify, distribute, publish, sublicense, rent, lease, host, commercialize, or otherwise exploit this Software.
+
+Prior written permission from the copyright holder is required for any use.
+
+3. Prohibited Activities
+
+You may not:
+
+* Copy any part of the Software.
+* Reverse engineer or analyze implementation details.
+* Reproduce the DSP pipeline or machine learning workflow.
+* Extract transition strategies, beatmatching methods, planning algorithms, embeddings, prompts, or architectural concepts.
+* Train or improve any AI model using the Software or its outputs.
+* Use generated mixes, reports, metadata, or analysis results for machine learning purposes.
+* Incorporate any portion of the Software into another application.
+* Host the Software as a cloud service or API.
+* Benchmark or publish performance comparisons without written authorization.
+* Sell, sublicense, or commercially exploit the Software.
+* Remove ownership notices.
+
+4. Public Repository Notice
+
+If this repository is publicly available, access is granted solely for viewing the project as part of a portfolio, demonstration, or technical evaluation.
+
+No permission is granted to copy, use, modify, redistribute, or commercialize the Software.
+
+5. Third-Party Software
+
+Third-party libraries, pretrained models, codecs, datasets, and dependencies remain governed by their own licenses.
+
+6. Disclaimer
+
+The Software is provided “AS IS” without any warranty.
+
+7. Limitation of Liability
+
+The copyright holder shall not be liable for damages resulting from the use or attempted use of the Software.
+
+8. Reservation of Rights
+
+All rights not expressly granted remain exclusively reserved by the copyright holder.
