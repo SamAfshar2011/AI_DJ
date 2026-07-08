@@ -1,1 +1,1002 @@
+04:12:45 | INFO    | aidj | Vibe model: using DSP-embedding fallback (no trained weights at model_1_genre_cnn.pt)
+04:15:03 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:15:03 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+04:15:07 | INFO    | aidj | Vibe model: using DSP-embedding fallback (no trained weights at model_1_genre_cnn.pt)
+04:15:08 | INFO    | aidj | analyzing: 02 - House B - C.wav
+04:15:11 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+04:15:13 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+04:15:16 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+04:15:16 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+04:15:20 | INFO    | aidj | job complete in 16.7s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/demo_test.wav
+04:22:00 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:22:21 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:22:30 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:22:30 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+04:22:30 | INFO    | aidj | cache hit: 02 - House B - C.wav
+04:22:30 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+04:22:30 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+04:22:30 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+04:22:30 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+04:22:32 | INFO    | aidj | job complete in 2.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/aidj_mix_25d25ec996d1.wav
+04:30:24 | INFO    | aidj | Scanned /var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/aidj_val_647q792d: 2 candidate files, 2 usable
+04:30:24 | INFO    | aidj | analyzing: t0.wav
+04:30:27 | INFO    | aidj | Vibe model: using DSP-embedding fallback (no trained weights at model_1_genre_cnn.pt)
+04:30:27 | INFO    | aidj | analyzing: t1.wav
+04:30:30 | INFO    | aidj | planned 2-track set (~0.6 min, rising energy)
+04:30:30 | INFO    | aidj | rendering 2 tracks -> ~0.4 min mix
+04:30:31 | INFO    | aidj | job complete in 6.6s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/validate_mix.wav
+04:32:33 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:32:33 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:32:33 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+04:32:33 | INFO    | aidj | cache hit: 02 - House B - C.wav
+04:32:33 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+04:32:33 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+04:32:33 | INFO    | aidj | planned 4-track set (~1.7 min, peak energy)
+04:32:33 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+04:32:35 | INFO    | aidj | job complete in 2.2s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/aidj_mix_17f9bb4b89a9.wav
+04:32:54 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+04:32:54 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+04:32:54 | INFO    | aidj | cache hit: 02 - House B - C.wav
+04:32:54 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+04:32:54 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+04:32:54 | INFO    | aidj | planned 4-track set (~1.7 min, wave energy)
+04:32:54 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+04:32:57 | INFO    | aidj | job complete in 2.2s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/aidj_mix_a0cecb67ddfb.wav
+04:33:44 | INFO    | aidj | Scanned /var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/aidj_tempo_qn6_ryuc: 3 candidate files, 3 usable
+04:33:44 | INFO    | aidj | analyzing: a_90.wav
+04:33:48 | INFO    | aidj | Vibe model: using DSP-embedding fallback (no trained weights at model_1_genre_cnn.pt)
+04:33:49 | INFO    | aidj | analyzing: b_145.wav
+04:33:52 | INFO    | aidj | analyzing: c_92.wav
+04:33:55 | INFO    | aidj | planned 3-track set (~0.8 min, rising energy)
+04:33:55 | INFO    | aidj | rendering 3 tracks -> ~0.4 min mix
+04:33:56 | ERROR   | aidj | pipeline crashed: operands could not be broadcast together with shapes (2,45023) (2,1111773) (2,45023) 
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI DJ/app/pipeline.py", line 100, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI DJ/app/render.py", line 239, in render_mix
+    out[:, start:end] += seg[:, : end - start]
+ValueError: operands could not be broadcast together with shapes (2,45023) (2,1111773) (2,45023) 
 
+04:33:56 | ERROR   | aidj | job failed: Pipeline error: operands could not be broadcast together with shapes (2,45023) (2,1111773) (2,45023) 
+04:36:25 | INFO    | aidj | Scanned /var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/aidj_tempo_m9n7rwzn: 3 candidate files, 3 usable
+04:36:25 | INFO    | aidj | analyzing: a_90.wav
+04:36:29 | INFO    | aidj | Vibe model: using DSP-embedding fallback (no trained weights at model_1_genre_cnn.pt)
+04:36:30 | INFO    | aidj | analyzing: b_145.wav
+04:36:33 | INFO    | aidj | analyzing: c_92.wav
+04:36:36 | INFO    | aidj | planned 3-track set (~0.8 min, rising energy)
+04:36:36 | INFO    | aidj | rendering 3 tracks -> ~0.5 min mix
+04:36:38 | INFO    | aidj | job complete in 12.7s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/tempo_test.wav
+04:37:00 | INFO    | aidj | Scanned /var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/aidj_val_99tr52f0: 2 candidate files, 2 usable
+04:37:00 | INFO    | aidj | analyzing: t0.wav
+04:37:03 | INFO    | aidj | Vibe model: using DSP-embedding fallback (no trained weights at model_1_genre_cnn.pt)
+04:37:04 | INFO    | aidj | analyzing: t1.wav
+04:37:06 | INFO    | aidj | planned 2-track set (~0.6 min, rising energy)
+04:37:06 | INFO    | aidj | rendering 2 tracks -> ~0.4 min mix
+04:37:08 | INFO    | aidj | job complete in 7.3s -> /Users/sam/Desktop/aiolearn/My_projects/AI DJ/outputs/validate_mix.wav
+16:44:51 | INFO    | aidj | Scanned /Users/sam/Documents/Songs: 7 candidate files, 7 usable
+16:44:59 | INFO    | aidj | Scanned /Users/sam/Documents/Songs: 7 candidate files, 7 usable
+16:44:59 | INFO    | aidj | analyzing: HERMIT.mp3
+16:45:07 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+16:45:08 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+16:45:15 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+16:45:24 | INFO    | aidj | analyzing: NO BATIDÃO.mp3
+16:45:29 | INFO    | aidj | analyzing: QUÉ DICES_ (Slowed).mp3
+16:45:37 | INFO    | aidj | analyzing: Royalty.mp3
+16:45:51 | INFO    | aidj | analyzing: SLAVA FUNK!.mp3
+16:45:59 | INFO    | aidj | planned 7-track set (~13.4 min, rising energy)
+16:45:59 | INFO    | aidj | rendering 7 tracks -> ~10.3 min mix
+16:46:20 | INFO    | aidj | job complete in 80.3s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_db92e44cf727.wav
+18:41:42 | INFO    | aidj | Scanned /Users/sam/Documents/mix: 28 candidate files, 28 usable
+18:41:53 | INFO    | aidj | Scanned /Users/sam/Documents/mix: 28 candidate files, 28 usable
+18:41:53 | INFO    | aidj | analyzing: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+18:42:05 | INFO    | aidj | analyzing: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+18:42:17 | INFO    | aidj | analyzing: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+18:42:28 | INFO    | aidj | analyzing: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+18:42:40 | INFO    | aidj | analyzing: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+18:42:56 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+18:43:07 | INFO    | aidj | analyzing: Bishtar Az Hamishe.mp3
+18:43:21 | INFO    | aidj | analyzing: Detstvo.mp3
+18:43:34 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+18:43:47 | INFO    | aidj | analyzing: Hoomaan - Delm Az Donya Gerefte (320).mp3
+18:43:58 | INFO    | aidj | analyzing: Kamin.mp3
+18:44:11 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+18:44:18 | INFO    | aidj | analyzing: Lalalalalalalal.mp3
+18:44:34 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+18:44:43 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+18:44:55 | INFO    | aidj | analyzing: Mockingbird.mp3
+18:45:12 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+18:45:22 | INFO    | aidj | analyzing: Royalty.mp3
+18:45:37 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+18:45:45 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+18:45:53 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+18:46:08 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+18:46:19 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+18:46:27 | INFO    | aidj | analyzing: That Sound.mp3
+18:46:34 | INFO    | aidj | analyzing: Детство (Offıcıal Edit Versıon).mp3
+18:46:48 | INFO    | aidj | analyzing: Есенин.mp3
+18:46:59 | INFO    | aidj | analyzing: Матушка.mp3
+18:47:11 | INFO    | aidj | analyzing: Мир.mp3
+18:47:22 | INFO    | aidj | planned 28-track set (~77.2 min, rising energy)
+18:47:22 | INFO    | aidj | rendering 28 tracks -> ~60.2 min mix
+18:49:17 | ERROR   | aidj | pipeline crashed: System error.
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/pipeline.py", line 100, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/render.py", line 283, in render_mix
+    save_wav(wav_path, out, sr, subtype="PCM_24")
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/audio_io.py", line 145, in save_wav
+    sf.write(str(path), data, sr, subtype=subtype)
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 378, in write
+    f.write(data)
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1089, in write
+    written = self._array_io('write', data, len(data))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1424, in _array_io
+    return self._cdata_io(action, cdata, ctype, frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1435, in _cdata_io
+    _error_check(self._errorcode)
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1511, in _error_check
+    raise LibsndfileError(err, prefix=prefix)
+soundfile.LibsndfileError: System error.
+
+18:49:17 | ERROR   | aidj | job failed: Pipeline error: System error.
+18:54:04 | INFO    | aidj | Scanned /Users/sam/Documents/mix: 28 candidate files, 28 usable
+18:54:12 | INFO    | aidj | Scanned /Users/sam/Documents/mix: 28 candidate files, 28 usable
+18:54:12 | INFO    | aidj | cache hit: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+18:54:12 | INFO    | aidj | cache hit: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+18:54:12 | INFO    | aidj | cache hit: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+18:54:12 | INFO    | aidj | cache hit: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+18:54:12 | INFO    | aidj | cache hit: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+18:54:12 | INFO    | aidj | cache hit: Alibi (with Pabllo Vittar & Yseult).mp3
+18:54:12 | INFO    | aidj | cache hit: Bishtar Az Hamishe.mp3
+18:54:12 | INFO    | aidj | cache hit: Detstvo.mp3
+18:54:12 | INFO    | aidj | cache hit: Don Omar, Lucenzo - Danza Kuduro.mp3
+18:54:12 | INFO    | aidj | cache hit: Hoomaan - Delm Az Donya Gerefte (320).mp3
+18:54:12 | INFO    | aidj | cache hit: Kamin.mp3
+18:54:12 | INFO    | aidj | cache hit: LUZ ROJA.mp3
+18:54:12 | INFO    | aidj | cache hit: Lalalalalalalal.mp3
+18:54:12 | INFO    | aidj | cache hit: MATUSHKA ULTRAFUNK.mp3
+18:54:12 | INFO    | aidj | cache hit: Meet you at the Graveyard.mp3
+18:54:12 | INFO    | aidj | cache hit: Mockingbird.mp3
+18:54:12 | INFO    | aidj | cache hit: Mortals Funk Remix.mp3
+18:54:12 | INFO    | aidj | cache hit: Royalty.mp3
+18:54:12 | INFO    | aidj | cache hit: SENTE MAIS.mp3
+18:54:12 | INFO    | aidj | cache hit: SLAVA POWER!.mp3
+18:54:12 | INFO    | aidj | cache hit: Shakira - Dai Dai (Ft Burna Boy).mp3
+18:54:12 | INFO    | aidj | cache hit: Tayna - Si Ai.mp3
+18:54:12 | INFO    | aidj | cache hit: Te ConocÍ - Bxkq Pxlwyse.mp3
+18:54:12 | INFO    | aidj | cache hit: That Sound.mp3
+18:54:12 | INFO    | aidj | cache hit: Детство (Offıcıal Edit Versıon).mp3
+18:54:12 | INFO    | aidj | cache hit: Есенин.mp3
+18:54:13 | INFO    | aidj | cache hit: Матушка.mp3
+18:54:13 | INFO    | aidj | cache hit: Мир.mp3
+18:54:13 | INFO    | aidj | planned 28-track set (~77.2 min, rising energy)
+18:54:13 | INFO    | aidj | rendering 28 tracks -> ~60.2 min mix
+18:56:29 | INFO    | aidj | job complete in 137.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_a766d3f0e1cc.wav
+19:41:36 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:41:36 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:41:36 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:41:36 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+19:41:59 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:41:59 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:41:59 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:41:59 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+19:42:52 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:42:52 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:42:52 | INFO    | aidj | Dance model: loaded GenreCNN (8 styles) on mps
+19:42:52 | INFO    | aidj | cache stale (model set changed): 01 - House A - Am.wav
+19:42:52 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+19:43:14 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:43:14 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:43:14 | INFO    | aidj | Dance model: loaded GenreCNN (8 styles) on mps
+19:43:14 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+19:43:14 | INFO    | aidj | Scanned datasets/_demo_audio: 4 candidate files, 4 usable
+19:43:14 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+19:43:14 | INFO    | aidj | analyzing: 02 - House B - C.wav
+19:43:18 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+19:43:20 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+19:43:21 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+19:43:21 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+19:43:24 | INFO    | aidj | job complete in 9.2s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/mdl_test.wav
+19:43:37 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:43:37 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:43:37 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:43:37 | INFO    | aidj | cache stale (model set changed): 01 - House A - Am.wav
+19:43:37 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+19:43:53 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:43:53 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:43:53 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:45:35 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:45:35 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:45:35 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:46:14 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:46:14 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:46:14 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:46:59 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+19:47:00 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=fallback
+19:47:00 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+19:47:00 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+19:47:00 | INFO    | aidj | cache stale (model set changed): 02 - House B - C.wav
+19:47:00 | INFO    | aidj | analyzing: 02 - House B - C.wav
+19:47:04 | INFO    | aidj | cache stale (model set changed): 03 - Deep C - B.wav
+19:47:04 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+19:47:06 | INFO    | aidj | cache stale (model set changed): 04 - Peak D - D.wav
+19:47:06 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+19:47:08 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+19:47:08 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+19:47:10 | INFO    | aidj | job complete in 10.3s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_c20f394a4965.wav
+19:48:00 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:48:00 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:48:00 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:48:34 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:48:34 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:48:34 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+19:55:57 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+19:55:57 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+19:55:57 | INFO    | aidj | Dance model: fallback to DSP score (no weights at model_3_danceability.pt)
+22:26:29 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+22:26:29 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+22:26:29 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+22:36:41 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 19 candidate files, 19 usable
+22:36:44 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+22:36:44 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 19 candidate files, 19 usable
+22:36:44 | INFO    | aidj | analyzing: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+22:36:59 | INFO    | aidj | analyzing: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+22:37:12 | INFO    | aidj | analyzing: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+22:37:23 | INFO    | aidj | analyzing: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+22:37:35 | INFO    | aidj | analyzing: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+22:37:51 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+22:38:02 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+22:38:16 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+22:38:23 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+22:38:33 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+22:38:45 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+22:38:54 | INFO    | aidj | analyzing: Royalty.mp3
+22:39:09 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+22:39:17 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+22:39:25 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+22:39:40 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+22:39:51 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+22:39:58 | INFO    | aidj | analyzing: That Sound.mp3
+22:40:06 | INFO    | aidj | analyzing: Матушка.mp3
+22:40:17 | INFO    | aidj | planned 18-track set (~47.0 min, peak energy)
+22:40:17 | INFO    | aidj | rendering 18 tracks -> ~34.4 min mix
+22:41:31 | WARNING | aidj | mp3 encode failed: [aost#0:0/libmp3lame @ 0x999024000] Error submitting a packet to the muxer: No space left on device
+    Last message repeated 1 times
+[out#0/mp3 @ 0x998c24240] Error muxing a packet
+[out#0/mp3 @ 0x998c24240] Task finished with error code: -28 (No space left on device)
+[out#0/mp3 @ 0x998c24240] Termi
+22:41:32 | INFO    | aidj | job complete in 288.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_b1495cd2cdc1.wav
+22:43:12 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+22:43:12 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 19 candidate files, 19 usable
+22:43:12 | INFO    | aidj | cache hit: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+22:43:12 | INFO    | aidj | cache hit: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+22:43:12 | INFO    | aidj | cache hit: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+22:43:12 | INFO    | aidj | cache hit: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+22:43:12 | INFO    | aidj | cache hit: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+22:43:12 | INFO    | aidj | cache hit: Alibi (with Pabllo Vittar & Yseult).mp3
+22:43:12 | INFO    | aidj | cache hit: Don Omar, Lucenzo - Danza Kuduro.mp3
+22:43:12 | INFO    | aidj | cache hit: LUZ ROJA.mp3
+22:43:12 | INFO    | aidj | cache hit: MATUSHKA ULTRAFUNK.mp3
+22:43:12 | INFO    | aidj | cache hit: Meet you at the Graveyard.mp3
+22:43:12 | INFO    | aidj | cache hit: Mortals Funk Remix.mp3
+22:43:12 | INFO    | aidj | cache hit: Royalty.mp3
+22:43:12 | INFO    | aidj | cache hit: SENTE MAIS.mp3
+22:43:12 | INFO    | aidj | cache hit: SLAVA POWER!.mp3
+22:43:12 | INFO    | aidj | cache hit: Shakira - Dai Dai (Ft Burna Boy).mp3
+22:43:12 | INFO    | aidj | cache hit: Tayna - Si Ai.mp3
+22:43:12 | INFO    | aidj | cache hit: Te ConocÍ - Bxkq Pxlwyse.mp3
+22:43:12 | INFO    | aidj | cache hit: That Sound.mp3
+22:43:12 | INFO    | aidj | cache hit: Матушка.mp3
+22:43:12 | INFO    | aidj | planned 19-track set (~49.6 min, peak energy)
+22:43:12 | INFO    | aidj | rendering 19 tracks -> ~36.3 min mix
+22:43:13 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp7_6owj7g.wav') — librosa fallback
+22:43:17 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpb4yr_pbr.wav') — librosa fallback
+22:43:20 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp_c0gnzg_.wav') — librosa fallback
+22:43:22 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpaltgj7ev.wav') — librosa fallback
+22:43:25 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmprz0n0i2e.wav') — librosa fallback
+22:43:28 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpccb85urd.wav') — librosa fallback
+22:43:30 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpgx2c9pfv.wav') — librosa fallback
+22:43:32 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp0mv_3qar.wav') — librosa fallback
+22:43:34 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpiitvkn4j.wav') — librosa fallback
+22:43:36 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp4q1btvet.wav') — librosa fallback
+22:43:39 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp7w41mcc2.wav') — librosa fallback
+22:43:41 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpv4z0mtkx.wav') — librosa fallback
+22:43:44 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpiu442mlx.wav') — librosa fallback
+22:43:47 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpgf9w7t5k.wav') — librosa fallback
+22:44:09 | ERROR   | aidj | pipeline crashed: System error.
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/pipeline.py", line 107, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/render.py", line 283, in render_mix
+    save_wav(wav_path, out, sr, subtype="PCM_24")
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/audio_io.py", line 145, in save_wav
+    sf.write(str(path), data, sr, subtype=subtype)
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 378, in write
+    f.write(data)
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1089, in write
+    written = self._array_io('write', data, len(data))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1424, in _array_io
+    return self._cdata_io(action, cdata, ctype, frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1435, in _cdata_io
+    _error_check(self._errorcode)
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/.venv/lib/python3.12/site-packages/soundfile.py", line 1511, in _error_check
+    raise LibsndfileError(err, prefix=prefix)
+soundfile.LibsndfileError: System error.
+
+22:44:09 | ERROR   | aidj | job failed: Pipeline error: System error.
+22:45:40 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 19 candidate files, 19 usable
+22:45:42 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+22:45:42 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 19 candidate files, 19 usable
+22:45:42 | INFO    | aidj | cache hit: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+22:45:42 | INFO    | aidj | cache hit: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+22:45:42 | INFO    | aidj | cache hit: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+22:45:42 | INFO    | aidj | cache hit: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+22:45:42 | INFO    | aidj | cache hit: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+22:45:42 | INFO    | aidj | cache hit: Alibi (with Pabllo Vittar & Yseult).mp3
+22:45:42 | INFO    | aidj | cache hit: Don Omar, Lucenzo - Danza Kuduro.mp3
+22:45:42 | INFO    | aidj | cache hit: LUZ ROJA.mp3
+22:45:42 | INFO    | aidj | cache hit: MATUSHKA ULTRAFUNK.mp3
+22:45:42 | INFO    | aidj | cache hit: Meet you at the Graveyard.mp3
+22:45:42 | INFO    | aidj | cache hit: Mortals Funk Remix.mp3
+22:45:42 | INFO    | aidj | cache hit: Royalty.mp3
+22:45:42 | INFO    | aidj | cache hit: SENTE MAIS.mp3
+22:45:42 | INFO    | aidj | cache hit: SLAVA POWER!.mp3
+22:45:42 | INFO    | aidj | cache hit: Shakira - Dai Dai (Ft Burna Boy).mp3
+22:45:42 | INFO    | aidj | cache hit: Tayna - Si Ai.mp3
+22:45:42 | INFO    | aidj | cache hit: Te ConocÍ - Bxkq Pxlwyse.mp3
+22:45:42 | INFO    | aidj | cache hit: That Sound.mp3
+22:45:42 | INFO    | aidj | cache hit: Матушка.mp3
+22:45:42 | INFO    | aidj | planned 19-track set (~49.5 min, peak energy)
+22:45:42 | INFO    | aidj | rendering 19 tracks -> ~36.9 min mix
+22:45:44 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpwyjg7zfr.wav') — librosa fallback
+22:45:46 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp4xtp9xta.wav') — librosa fallback
+22:45:49 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpz6jvp3wx.wav') — librosa fallback
+22:45:52 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpj5bt74jt.wav') — librosa fallback
+22:45:54 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpqypezbl4.wav') — librosa fallback
+22:45:56 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmphlpx9mri.wav') — librosa fallback
+22:45:59 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpffzbl9xx.wav') — librosa fallback
+22:46:01 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpn2s7f3t_.wav') — librosa fallback
+22:46:03 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmph_ufc66c.wav') — librosa fallback
+22:46:04 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp43e6hhfe.wav') — librosa fallback
+22:46:07 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp0pc83ild.wav') — librosa fallback
+22:46:08 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpdm2tiorz.wav') — librosa fallback
+22:46:11 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpqjh8hyc2.wav') — librosa fallback
+22:46:14 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpzray0dpp.wav') — librosa fallback
+22:46:17 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpf4lcm9u2.wav') — librosa fallback
+22:46:20 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp2zi51f46.wav') — librosa fallback
+22:46:23 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpvzr06htt.wav') — librosa fallback
+22:46:33 | ERROR   | aidj | job failed: Pipeline error: Error opening '/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_d27b23a0e0e6.wav': System error.
+22:49:21 | INFO    | aidj | Scanned /Users/sam/Documents/funk2: 19 candidate files, 19 usable
+22:49:27 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+22:49:27 | INFO    | aidj | Scanned /Users/sam/Documents/funk2: 19 candidate files, 19 usable
+22:49:27 | INFO    | aidj | analyzing: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+22:49:39 | INFO    | aidj | analyzing: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+22:49:52 | INFO    | aidj | analyzing: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+22:50:03 | INFO    | aidj | analyzing: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+22:50:15 | INFO    | aidj | analyzing: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+22:50:31 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+22:50:41 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+22:50:53 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+22:51:00 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+22:51:09 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+22:51:20 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+22:51:30 | INFO    | aidj | analyzing: Royalty.mp3
+22:51:44 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+22:51:52 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+22:52:00 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+22:52:14 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+22:52:25 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+22:52:32 | INFO    | aidj | analyzing: That Sound.mp3
+22:52:39 | INFO    | aidj | analyzing: Матушка.mp3
+22:52:51 | INFO    | aidj | planned 19-track set (~49.6 min, rising energy)
+22:52:51 | INFO    | aidj | rendering 19 tracks -> ~36.6 min mix
+22:54:12 | INFO    | aidj | job complete in 285.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_dd9a73f23e69.wav
+22:58:58 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+22:58:58 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+22:58:58 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+22:58:58 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+22:58:58 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+22:58:58 | INFO    | aidj | cache stale (model set changed): 01 - House A - Am.wav
+22:58:58 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+22:59:03 | INFO    | aidj | cache stale (model set changed): 02 - House B - C.wav
+22:59:03 | INFO    | aidj | analyzing: 02 - House B - C.wav
+22:59:05 | INFO    | aidj | cache stale (model set changed): 03 - Deep C - B.wav
+22:59:05 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+22:59:06 | INFO    | aidj | cache stale (model set changed): 04 - Peak D - D.wav
+22:59:06 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+22:59:08 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+22:59:08 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+22:59:09 | WARNING | aidj | rubberband stretch failed (No module named 'pyrubberband') — librosa fallback
+22:59:10 | INFO    | aidj | job complete in 12.2s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+23:00:56 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+23:00:56 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+23:00:56 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+23:00:56 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+23:00:56 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+23:00:56 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+23:00:56 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+23:00:56 | INFO    | aidj | cache hit: 02 - House B - C.wav
+23:00:56 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+23:00:56 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+23:00:56 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+23:00:56 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+23:00:57 | WARNING | aidj | rubberband stretch failed (No module named 'pyrubberband') — librosa fallback
+23:00:59 | INFO    | aidj | job complete in 3.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+23:03:39 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+23:03:39 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+23:03:39 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+23:03:39 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+23:03:39 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+23:03:39 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+23:03:39 | INFO    | aidj | cache hit: 02 - House B - C.wav
+23:03:39 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+23:03:39 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+23:03:39 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+23:03:39 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+23:03:41 | INFO    | aidj | job complete in 2.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+23:04:01 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+23:04:01 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+23:04:01 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+23:04:01 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+23:04:01 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+23:04:01 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+23:04:01 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+23:04:01 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+23:04:01 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+23:04:01 | INFO    | aidj | cache hit: 02 - House B - C.wav
+23:04:01 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+23:04:01 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+23:04:01 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+23:04:01 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+23:04:03 | INFO    | aidj | job complete in 1.9s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+23:12:59 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+23:12:59 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+23:12:59 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+23:12:59 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+23:12:59 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+23:12:59 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+23:12:59 | INFO    | aidj | cache hit: 02 - House B - C.wav
+23:12:59 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+23:12:59 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+23:12:59 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+23:12:59 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+23:13:01 | INFO    | aidj | job complete in 2.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+23:56:34 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+23:56:51 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+23:56:51 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+23:56:51 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+23:57:02 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+23:57:14 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+23:57:21 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+23:57:30 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+23:57:41 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+23:57:50 | INFO    | aidj | analyzing: Royalty.mp3
+23:58:04 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+23:58:11 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+23:58:19 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+23:58:33 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+23:58:44 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+23:58:52 | INFO    | aidj | analyzing: That Sound.mp3
+23:58:59 | INFO    | aidj | analyzing: Матушка.mp3
+23:59:10 | INFO    | aidj | planned 14-track set (~34.3 min, peak energy)
+23:59:10 | INFO    | aidj | rendering 14 tracks -> ~25.0 min mix
+00:00:05 | INFO    | aidj | job complete in 194.7s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_dbda9bc2cd14.wav
+00:03:46 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:03:46 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+00:03:46 | INFO    | aidj | cache hit: Alibi (with Pabllo Vittar & Yseult).mp3
+00:03:46 | INFO    | aidj | cache hit: Don Omar, Lucenzo - Danza Kuduro.mp3
+00:03:46 | INFO    | aidj | cache hit: LUZ ROJA.mp3
+00:03:46 | INFO    | aidj | cache hit: MATUSHKA ULTRAFUNK.mp3
+00:03:46 | INFO    | aidj | cache hit: Meet you at the Graveyard.mp3
+00:03:46 | INFO    | aidj | cache hit: Mortals Funk Remix.mp3
+00:03:46 | INFO    | aidj | cache hit: Royalty.mp3
+00:03:46 | INFO    | aidj | cache hit: SENTE MAIS.mp3
+00:03:46 | INFO    | aidj | cache hit: SLAVA POWER!.mp3
+00:03:46 | INFO    | aidj | cache hit: Shakira - Dai Dai (Ft Burna Boy).mp3
+00:03:46 | INFO    | aidj | cache hit: Tayna - Si Ai.mp3
+00:03:46 | INFO    | aidj | cache hit: Te ConocÍ - Bxkq Pxlwyse.mp3
+00:03:46 | INFO    | aidj | cache hit: That Sound.mp3
+00:03:46 | INFO    | aidj | cache hit: Матушка.mp3
+00:03:46 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+00:03:46 | INFO    | aidj | rendering 14 tracks -> ~25.3 min mix
+00:04:31 | ERROR   | aidj | pipeline crashed: System error.
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/pipeline.py", line 107, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/render.py", line 283, in render_mix
+    save_wav(wav_path, out, sr, subtype="PCM_24")
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/audio_io.py", line 145, in save_wav
+    sf.write(str(path), data, sr, subtype=subtype)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 378, in write
+    f.write(data)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1089, in write
+    written = self._array_io('write', data, len(data))
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1424, in _array_io
+    return self._cdata_io(action, cdata, ctype, frames)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1435, in _cdata_io
+    _error_check(self._errorcode)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1511, in _error_check
+    raise LibsndfileError(err, prefix=prefix)
+soundfile.LibsndfileError: System error.
+
+00:04:31 | ERROR   | aidj | job failed: Pipeline error: System error.
+00:05:24 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn2: 14 candidate files, 14 usable
+00:05:30 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:05:30 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn2: 14 candidate files, 14 usable
+00:05:30 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+00:05:39 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+00:05:52 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+00:05:59 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+00:06:08 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+00:06:18 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+00:06:28 | INFO    | aidj | analyzing: Royalty.mp3
+00:06:42 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+00:06:49 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+00:06:57 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+00:07:12 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+00:07:22 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+00:07:30 | INFO    | aidj | analyzing: That Sound.mp3
+00:07:37 | INFO    | aidj | analyzing: Матушка.mp3
+00:07:48 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+00:07:48 | INFO    | aidj | rendering 14 tracks -> ~25.3 min mix
+00:07:49 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmpcn727ibk.wav') — librosa fallback
+00:07:51 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmp5eys87af.wav') — librosa fallback
+00:07:53 | WARNING | aidj | rubberband stretch failed ([Errno 28] No space left on device: '/var/folders/bq/2bdwpdy14s12c5jr2k5scclm0000gn/T/tmphe6uc4vi.wav') — librosa fallback
+00:13:43 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+00:13:43 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+00:13:43 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+00:13:43 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:13:43 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+00:13:43 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+00:13:43 | INFO    | aidj | cache hit: 02 - House B - C.wav
+00:13:43 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+00:13:43 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+00:13:43 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+00:13:43 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+00:13:45 | INFO    | aidj | job complete in 2.2s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+00:34:38 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn2: 14 candidate files, 14 usable
+00:34:39 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:34:39 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn2: 14 candidate files, 14 usable
+00:34:39 | INFO    | aidj | cache hit: Alibi (with Pabllo Vittar & Yseult).mp3
+00:34:39 | INFO    | aidj | cache hit: Don Omar, Lucenzo - Danza Kuduro.mp3
+00:34:39 | INFO    | aidj | cache hit: LUZ ROJA.mp3
+00:34:39 | INFO    | aidj | cache hit: MATUSHKA ULTRAFUNK.mp3
+00:34:39 | INFO    | aidj | cache hit: Meet you at the Graveyard.mp3
+00:34:39 | INFO    | aidj | cache hit: Mortals Funk Remix.mp3
+00:34:39 | INFO    | aidj | cache hit: Royalty.mp3
+00:34:39 | INFO    | aidj | cache hit: SENTE MAIS.mp3
+00:34:39 | INFO    | aidj | cache hit: SLAVA POWER!.mp3
+00:34:39 | INFO    | aidj | cache hit: Shakira - Dai Dai (Ft Burna Boy).mp3
+00:34:39 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+00:34:52 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+00:35:00 | INFO    | aidj | analyzing: That Sound.mp3
+00:35:06 | INFO    | aidj | analyzing: Матушка.mp3
+00:35:16 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+00:35:16 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+00:35:16 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+00:35:16 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:35:16 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+00:35:16 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+00:35:16 | INFO    | aidj | cache hit: 02 - House B - C.wav
+00:35:16 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+00:35:16 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+00:35:16 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+00:35:16 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+00:35:18 | INFO    | aidj | job complete in 2.1s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+00:35:48 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn3: 14 candidate files, 14 usable
+00:36:12 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:36:12 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn3: 14 candidate files, 14 usable
+00:36:12 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+00:36:24 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+00:36:36 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+00:36:43 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+00:36:53 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+00:37:03 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+00:37:12 | INFO    | aidj | analyzing: Royalty.mp3
+00:37:26 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+00:37:33 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+00:37:41 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+00:37:55 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+00:38:05 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+00:38:13 | INFO    | aidj | analyzing: That Sound.mp3
+00:38:19 | INFO    | aidj | analyzing: Матушка.mp3
+00:38:30 | INFO    | aidj | planned 14-track set (~34.5 min, rising energy)
+00:38:30 | INFO    | aidj | rendering 14 tracks -> ~25.6 min mix
+00:39:14 | ERROR   | aidj | pipeline crashed: System error.
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/pipeline.py", line 107, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/render.py", line 283, in render_mix
+    save_wav(wav_path, out, sr, subtype="PCM_24")
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/audio_io.py", line 145, in save_wav
+    sf.write(str(path), data, sr, subtype=subtype)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 378, in write
+    f.write(data)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1089, in write
+    written = self._array_io('write', data, len(data))
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1424, in _array_io
+    return self._cdata_io(action, cdata, ctype, frames)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1435, in _cdata_io
+    _error_check(self._errorcode)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1511, in _error_check
+    raise LibsndfileError(err, prefix=prefix)
+soundfile.LibsndfileError: System error.
+
+00:39:14 | ERROR   | aidj | job failed: Pipeline error: System error.
+00:42:30 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+00:42:30 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+00:42:30 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+00:42:30 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:42:30 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+00:42:30 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+00:42:30 | INFO    | aidj | cache hit: 02 - House B - C.wav
+00:42:30 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+00:42:30 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+00:42:30 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+00:42:30 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+00:42:31 | INFO    | aidj | job complete in 2.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+00:42:50 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn4: 14 candidate files, 14 usable
+00:43:11 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+00:43:11 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn4: 14 candidate files, 14 usable
+00:43:11 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+00:43:23 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+00:43:35 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+00:43:42 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+00:43:51 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+00:44:02 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+00:44:11 | INFO    | aidj | analyzing: Royalty.mp3
+00:44:25 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+00:44:32 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+00:44:40 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+00:44:54 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+00:45:05 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+00:45:13 | INFO    | aidj | analyzing: That Sound.mp3
+00:45:19 | INFO    | aidj | analyzing: Матушка.mp3
+00:45:30 | INFO    | aidj | planned 14-track set (~34.5 min, rising energy)
+00:45:30 | INFO    | aidj | rendering 14 tracks -> ~25.6 min mix
+00:46:16 | ERROR   | aidj | pipeline crashed: System error.
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/pipeline.py", line 107, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/render.py", line 283, in render_mix
+    save_wav(wav_path, out, sr, subtype="PCM_24")
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/audio_io.py", line 145, in save_wav
+    sf.write(str(path), data, sr, subtype=subtype)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 378, in write
+    f.write(data)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1089, in write
+    written = self._array_io('write', data, len(data))
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1424, in _array_io
+    return self._cdata_io(action, cdata, ctype, frames)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1435, in _cdata_io
+    _error_check(self._errorcode)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1511, in _error_check
+    raise LibsndfileError(err, prefix=prefix)
+soundfile.LibsndfileError: System error.
+
+00:46:16 | ERROR   | aidj | job failed: Pipeline error: System error.
+02:03:13 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:03:18 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:03:18 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:03:18 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:03:27 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:03:39 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:03:46 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:03:55 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:04:07 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:04:16 | INFO    | aidj | analyzing: Royalty.mp3
+02:04:30 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:04:38 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:04:46 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:05:00 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:05:10 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:05:18 | INFO    | aidj | analyzing: That Sound.mp3
+02:05:24 | INFO    | aidj | analyzing: Матушка.mp3
+02:05:35 | INFO    | aidj | planned 14-track set (~32.8 min, peak energy)
+02:05:35 | INFO    | aidj | rendering 14 tracks -> ~24.1 min mix
+02:06:30 | INFO    | aidj | job complete in 192.4s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_746c8a8f8749.wav
+02:08:16 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:08:16 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:08:16 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:08:26 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:08:39 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:08:45 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:08:54 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:09:05 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:09:15 | INFO    | aidj | analyzing: Royalty.mp3
+02:09:29 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:09:37 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:09:45 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:10:00 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:10:11 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:10:19 | INFO    | aidj | analyzing: That Sound.mp3
+02:10:26 | INFO    | aidj | analyzing: Матушка.mp3
+02:10:38 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+02:10:38 | INFO    | aidj | rendering 14 tracks -> ~25.3 min mix
+02:11:24 | ERROR   | aidj | pipeline crashed: System error.
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/pipeline.py", line 107, in run_mix_job
+    result = render_mix(ordered, plans, deck_rates, settings,
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/render.py", line 283, in render_mix
+    save_wav(wav_path, out, sr, subtype="PCM_24")
+  File "/Users/sam/Desktop/aiolearn/My_projects/AI_DJ/app/audio_io.py", line 145, in save_wav
+    sf.write(str(path), data, sr, subtype=subtype)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 378, in write
+    f.write(data)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1089, in write
+    written = self._array_io('write', data, len(data))
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1424, in _array_io
+    return self._cdata_io(action, cdata, ctype, frames)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1435, in _cdata_io
+    _error_check(self._errorcode)
+  File "/Users/sam/Desktop/aiolearn/Apple/lib/python3.10/site-packages/soundfile.py", line 1511, in _error_check
+    raise LibsndfileError(err, prefix=prefix)
+soundfile.LibsndfileError: System error.
+
+02:11:24 | ERROR   | aidj | job failed: Pipeline error: System error.
+02:12:14 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+02:12:14 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+02:12:14 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+02:12:14 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:12:14 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+02:12:14 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+02:12:19 | INFO    | aidj | analyzing: 02 - House B - C.wav
+02:12:21 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+02:12:22 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+02:12:23 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:12:24 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+02:12:24 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+02:12:26 | INFO    | aidj | job complete in 12.3s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+02:12:47 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:12:47 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:12:47 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:12:57 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:13:10 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:13:17 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:13:26 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:13:37 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:13:46 | INFO    | aidj | analyzing: Royalty.mp3
+02:14:00 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:14:08 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:14:16 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:14:30 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:14:40 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:14:48 | INFO    | aidj | analyzing: That Sound.mp3
+02:14:55 | INFO    | aidj | analyzing: Матушка.mp3
+02:15:06 | INFO    | aidj | planned 14-track set (~34.5 min, rising energy)
+02:15:06 | INFO    | aidj | rendering 14 tracks -> ~25.6 min mix
+02:18:11 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+02:18:11 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+02:18:11 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+02:18:11 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:18:11 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+02:18:11 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+02:18:14 | INFO    | aidj | analyzing: 02 - House B - C.wav
+02:18:16 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+02:18:18 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+02:18:20 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+02:18:20 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+02:18:22 | INFO    | aidj | job complete in 11.3s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+02:19:37 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+02:19:37 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+02:19:37 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+02:19:37 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:19:37 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+02:19:37 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+02:19:40 | INFO    | aidj | analyzing: 02 - House B - C.wav
+02:19:42 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+02:19:44 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+02:19:46 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+02:19:46 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+02:19:48 | INFO    | aidj | job complete in 11.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+02:20:19 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+02:20:19 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+02:20:19 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+02:20:19 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:20:19 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+02:20:19 | INFO    | aidj | cache hit: 01 - House A - Am.wav
+02:20:19 | INFO    | aidj | cache hit: 02 - House B - C.wav
+02:20:19 | INFO    | aidj | cache hit: 03 - Deep C - B.wav
+02:20:19 | INFO    | aidj | cache hit: 04 - Peak D - D.wav
+02:20:19 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+02:20:19 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+02:20:21 | INFO    | aidj | job complete in 1.9s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+02:20:28 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:20:48 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:20:48 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:20:48 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:20:59 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:21:11 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:21:18 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:21:27 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:21:37 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:21:46 | INFO    | aidj | analyzing: Royalty.mp3
+02:21:59 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:22:07 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:22:15 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:22:29 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:22:39 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:22:46 | INFO    | aidj | analyzing: That Sound.mp3
+02:22:53 | INFO    | aidj | analyzing: Матушка.mp3
+02:23:03 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+02:23:03 | INFO    | aidj | rendering 14 tracks -> ~25.3 min mix
+02:23:57 | INFO    | aidj | job complete in 189.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_4a79e3edf441.wav
+02:33:22 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:33:31 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:33:31 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:33:31 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:33:40 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:33:53 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:33:59 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:34:08 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:34:19 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:34:28 | INFO    | aidj | analyzing: Royalty.mp3
+02:34:42 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:34:49 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:34:57 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:35:11 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:35:21 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:35:29 | INFO    | aidj | analyzing: That Sound.mp3
+02:35:35 | INFO    | aidj | analyzing: Матушка.mp3
+02:35:46 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+02:35:46 | INFO    | aidj | rendering 14 tracks -> ~25.3 min mix
+02:36:41 | INFO    | aidj | job complete in 190.0s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_49aa9d842e0a.wav
+02:38:14 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:38:14 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:38:14 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:38:24 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:38:37 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:38:44 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:38:53 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:39:04 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:39:13 | INFO    | aidj | analyzing: Royalty.mp3
+02:39:27 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:39:34 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:39:42 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:39:56 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:40:07 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:40:15 | INFO    | aidj | analyzing: That Sound.mp3
+02:40:21 | INFO    | aidj | analyzing: Матушка.mp3
+02:40:32 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+02:40:32 | INFO    | aidj | rendering 14 tracks -> ~24.7 min mix
+02:41:34 | INFO    | aidj | job complete in 199.7s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_d2f76e745465.wav
+02:46:19 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:46:19 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:46:19 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:46:29 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:46:41 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:46:47 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:46:56 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:47:07 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:47:17 | INFO    | aidj | analyzing: Royalty.mp3
+02:47:31 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:47:38 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:47:46 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:48:00 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:48:10 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:48:18 | INFO    | aidj | analyzing: That Sound.mp3
+02:48:25 | INFO    | aidj | analyzing: Матушка.mp3
+02:48:36 | INFO    | aidj | planned 14-track set (~34.6 min, peak energy)
+02:48:36 | INFO    | aidj | rendering 14 tracks -> ~25.3 min mix
+02:49:32 | INFO    | aidj | job complete in 193.3s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_cc957ecd0f73.wav
+02:53:38 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+02:53:38 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+02:53:38 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+02:53:48 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+02:54:01 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+02:54:07 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+02:54:16 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+02:54:27 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+02:54:36 | INFO    | aidj | analyzing: Royalty.mp3
+02:54:51 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+02:54:58 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+02:55:06 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+02:55:20 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+02:55:31 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+02:55:38 | INFO    | aidj | analyzing: That Sound.mp3
+02:55:45 | INFO    | aidj | analyzing: Матушка.mp3
+02:55:56 | INFO    | aidj | planned 14-track set (~34.5 min, peak energy)
+02:55:56 | INFO    | aidj | rendering 14 tracks -> ~25.1 min mix
+02:56:52 | INFO    | aidj | job complete in 193.4s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_afbe863d4356.wav
+03:02:06 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+03:02:06 | INFO    | aidj | Scanned /Users/sam/Documents/autobahn: 14 candidate files, 14 usable
+03:02:06 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+03:02:15 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+03:02:28 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+03:02:34 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+03:02:43 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+03:02:53 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+03:03:02 | INFO    | aidj | analyzing: Royalty.mp3
+03:03:15 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+03:03:22 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+03:03:30 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+03:03:44 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+03:03:54 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+03:04:02 | INFO    | aidj | analyzing: That Sound.mp3
+03:04:08 | INFO    | aidj | analyzing: Матушка.mp3
+03:04:19 | INFO    | aidj | planned 8-track set (~20.7 min, peak energy)
+03:04:19 | INFO    | aidj | rendering 8 tracks -> ~15.8 min mix
+03:04:51 | INFO    | aidj | job complete in 165.4s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_7e6364cb0a36.wav
+03:10:15 | INFO    | aidj | Scanned /Users/sam/Documents/funk_AI: 19 candidate files, 19 usable
+03:10:18 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+03:10:18 | INFO    | aidj | Scanned /Users/sam/Documents/funk_AI: 19 candidate files, 19 usable
+03:10:18 | INFO    | aidj | analyzing: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+03:10:29 | INFO    | aidj | analyzing: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+03:10:41 | INFO    | aidj | analyzing: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+03:10:51 | INFO    | aidj | analyzing: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+03:11:03 | INFO    | aidj | analyzing: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+03:11:19 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+03:11:29 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+03:11:41 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+03:11:48 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+03:11:57 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+03:12:08 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+03:12:17 | INFO    | aidj | analyzing: Royalty.mp3
+03:12:32 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+03:12:39 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+03:12:47 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+03:13:02 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+03:13:12 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+03:13:20 | INFO    | aidj | analyzing: That Sound.mp3
+03:13:27 | INFO    | aidj | analyzing: Матушка.mp3
+03:13:38 | INFO    | aidj | planned 19-track set (~50.3 min, peak energy)
+03:13:38 | INFO    | aidj | rendering 19 tracks -> ~37.4 min mix
+13:33:38 | INFO    | aidj | Vibe model: loaded trained GenreCNN (model_1_genre_cnn.pt) on mps
+13:33:38 | INFO    | aidj | Mood model: loaded MoodTaggerNet (50 tags) on mps
+13:33:39 | INFO    | aidj | Dance model: loaded GenreCNN (11 styles) on mps
+13:33:39 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+13:33:39 | INFO    | aidj | Scanned /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/datasets/_demo_audio: 4 candidate files, 4 usable
+13:33:39 | INFO    | aidj | analyzing: 01 - House A - Am.wav
+13:33:42 | INFO    | aidj | analyzing: 02 - House B - C.wav
+13:33:44 | INFO    | aidj | analyzing: 03 - Deep C - B.wav
+13:33:46 | INFO    | aidj | analyzing: 04 - Peak D - D.wav
+13:33:48 | INFO    | aidj | planned 4-track set (~1.7 min, rising energy)
+13:33:48 | INFO    | aidj | rendering 4 tracks -> ~1.0 min mix
+13:33:50 | INFO    | aidj | job complete in 11.4s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/notebook_mix.wav
+13:38:30 | INFO    | aidj | Scanned /Users/sam/Documents/funk_AI: 19 candidate files, 19 usable
+13:38:32 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+13:38:32 | INFO    | aidj | Scanned /Users/sam/Documents/funk_AI: 19 candidate files, 19 usable
+13:38:32 | INFO    | aidj | analyzing: 072ebf6d-f480-405d-bf50-cd9f1915f033.mp3
+13:38:42 | INFO    | aidj | analyzing: 25ef2a17-f766-4582-a6aa-60b58bc4415f.mp3
+13:38:54 | INFO    | aidj | analyzing: 43a3a138-c541-46c5-8c88-0f4f339e8b0d.mp3
+13:39:03 | INFO    | aidj | analyzing: 4e22dc34-fe78-4779-9b25-c95f2acc7fd1.mp3
+13:39:15 | INFO    | aidj | analyzing: 851c873b-c26f-4f22-8e8f-01485c9fa4ba.mp3
+13:39:30 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+13:39:39 | INFO    | aidj | analyzing: Don Omar, Lucenzo - Danza Kuduro.mp3
+13:39:51 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+13:39:58 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+13:40:07 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+13:40:17 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+13:40:26 | INFO    | aidj | analyzing: Royalty.mp3
+13:40:41 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+13:40:48 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+13:40:56 | INFO    | aidj | analyzing: Shakira - Dai Dai (Ft Burna Boy).mp3
+13:41:10 | INFO    | aidj | analyzing: Tayna - Si Ai.mp3
+13:41:20 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+13:41:28 | INFO    | aidj | analyzing: That Sound.mp3
+13:41:35 | INFO    | aidj | analyzing: Матушка.mp3
+13:41:46 | INFO    | aidj | planned 19-track set (~50.2 min, rising energy)
+13:41:46 | INFO    | aidj | rendering 19 tracks -> ~37.4 min mix
+13:42:49 | INFO    | aidj | job complete in 257.5s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_86a3b0023cab.wav
+13:58:07 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 9 candidate files, 9 usable
+13:58:13 | INFO    | aidj | active models -> vibe=cnn  mood=loaded  dance=loaded
+13:58:13 | INFO    | aidj | Scanned /Users/sam/Documents/funk: 9 candidate files, 9 usable
+13:58:13 | INFO    | aidj | analyzing: Alibi (with Pabllo Vittar & Yseult).mp3
+13:58:23 | INFO    | aidj | analyzing: LUZ ROJA.mp3
+13:58:30 | INFO    | aidj | analyzing: MATUSHKA ULTRAFUNK.mp3
+13:58:38 | INFO    | aidj | analyzing: Meet you at the Graveyard.mp3
+13:58:49 | INFO    | aidj | analyzing: Mortals Funk Remix.mp3
+13:58:59 | INFO    | aidj | analyzing: Royalty.mp3
+13:59:13 | INFO    | aidj | analyzing: SENTE MAIS.mp3
+13:59:20 | INFO    | aidj | analyzing: SLAVA POWER!.mp3
+13:59:28 | INFO    | aidj | analyzing: Te ConocÍ - Bxkq Pxlwyse.mp3
+13:59:36 | INFO    | aidj | planned 9-track set (~20.9 min, rising energy)
+13:59:36 | INFO    | aidj | rendering 9 tracks -> ~15.6 min mix
+14:00:08 | INFO    | aidj | job complete in 114.4s -> /Users/sam/Desktop/aiolearn/My_projects/AI_DJ/outputs/aidj_mix_59ff997fb240.wav
